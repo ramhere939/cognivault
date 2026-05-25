@@ -79,14 +79,10 @@ app = FastAPI(
 )
 
 # CORS — allow frontend dev server
-settings = get_settings()
-origins = settings.cors_origins_list
-allow_all = "*" in origins
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins if not allow_all else ["*"],
-    allow_credentials=not allow_all,  # Must be false if origins is ['*']
+    allow_origins=["*"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
