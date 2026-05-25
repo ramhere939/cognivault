@@ -1,0 +1,13 @@
+node_modules/
+venv/
+__pycache__/
+.env
+*.env
+*.db
+chroma/
+chromadb/
+dist/
+build/
+uploads/
+data/uploads/
+.DS_Store
