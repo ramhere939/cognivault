@@ -5,6 +5,7 @@ WORKDIR /app
 # System dependencies for PyMuPDF
 RUN apt-get update && apt-get install -y \
     libmupdf-dev \
+    build-essential \
     && rm -rf /var/lib/apt/lists/*
 
 COPY requirements.txt .
