@@ -18,7 +18,7 @@ logger = logging.getLogger(__name__)
 # ── Thresholds ─────────────────────────────────────────────────────────────
 REFUSAL_THRESHOLDS = {
     "min_chunks":           2,     # refuse if < 2 chunks retrieved
-    "min_best_similarity":  0.55,  # refuse if best chunk score < 0.55
+    "min_best_similarity":  0.015, # refuse if best chunk RRF score < 0.015
     "min_term_coverage":    0.35,  # refuse if <35% query terms in chunks
     "min_source_docs":      1,     # need at least 1 distinct source doc
 }
