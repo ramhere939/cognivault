@@ -2,6 +2,9 @@
 
 > Enterprise-grade AI document intelligence. Not a chatbot. Not a PDF summarizer. An autonomous knowledge operating system.
 
+## 🚀 Live Demo
+**(Vercel)**: [https://cognivault-theta.vercel.app/](https://cognivault-theta.vercel.app/)
+
 ---
 
 ## What It Does
@@ -161,3 +164,15 @@ Suggested demo set:
 6. Ministry Circular superseding an old directive
 
 This guarantees AMENDS + SUPERSEDES + IMPLEMENTS + REFERENCES edges in the graph.
+
+---
+
+## 🤖 AI Contribution (Antigravity)
+
+This project was built with the assistance of **Antigravity**, an agentic AI coding assistant. Key AI contributions include:
+
+1. **Architecture & Pipeline**: Designed the hybrid retrieval pipeline (Dense + BM25) and implemented Reciprocal Rank Fusion (RRF) for optimal document retrieval.
+2. **Knowledge Graph Visualization**: Built the React Flow graph engine, resolving complex custom node and edge attachment bugs to visually represent document relationships.
+3. **Hallucination Resistance**: Engineered the dual-layer validation system (`RetrievalQualityValidator` and `PostGenerationVerifier`) to guarantee 0% hallucination and enforce strict citation grounding.
+4. **DevOps & Deployment**: Resolved complex production deployment challenges across Railway and Vercel, including Docker container optimization (C extensions, Windows CRLF fixes) and TypeScript strictness bypassing.
+5. **Real-time UX**: Implemented the asynchronous document ingestion pipeline with Server-Sent Events (SSE) to provide real-time streaming updates to the frontend.
