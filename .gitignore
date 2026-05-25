@@ -1,27 +1,13 @@
-# dependencies
 node_modules/
 venv/
 __pycache__/
-
-# env
 .env
 *.env
-
-# db
 *.db
-
-# chroma
 chroma/
 chromadb/
-
-# uploads
-uploads/
-data/uploads/
-
-# build
 dist/
 build/
-
-# mac/windows
+uploads/
+data/uploads/
 .DS_Store
-Thumbs.db
