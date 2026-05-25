@@ -100,7 +100,8 @@ export function IngestPage() {
         upsertJob({ doc_id, filename, stage: 'ocr', progress: 0, message: 'Starting...' });
 
         // Connect SSE stream
-        const eventSource = new EventSource(`/api/ingest/${doc_id}/stream`);
+        const baseUrl = import.meta.env.VITE_API_URL || '/api';
+        const eventSource = new EventSource(`${baseUrl}/ingest/${doc_id}/stream`);
 
         eventSource.onmessage = (event) => {
           try {
