@@ -134,3 +134,7 @@ async def health(db=None):
 @app.get("/")
 async def root():
     return {"message": "Knowledge Intelligence Platform API", "docs": "/docs"}
+
+@app.get("/healthz")
+async def healthz():
+    return {"status": "ok"}
