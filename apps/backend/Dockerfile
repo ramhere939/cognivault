@@ -15,5 +15,5 @@ COPY . .
 
 EXPOSE 8000
 
-RUN chmod +x start.sh
+RUN chmod +x start.sh && sed -i 's/\r$//' start.sh
 ENTRYPOINT ["bash", "./start.sh"]
